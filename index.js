@@ -186,7 +186,7 @@ CuboidMaker.prototype.surfaceArea = function(){
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
 const cuboid = new CuboidMaker ({
-  lengtH: '4',
+  length: '4',
   width: '5',
   height: '5',
 })
@@ -202,13 +202,28 @@ console.log("Topic 3: Surface Area", cuboid.surfaceArea()); // 130
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 class CuboidMakerTwo{
-
+  constructor(attributes){
+    this.length = attributes.length;
+    this.width = attributes.width;
+    this.height = attributes.height;
+  }
+  volume(){
+    return this.length * this.width * this.height;
+  }
+  surfaceArea(){
+    return 2 * ((this.length*this.height)+ (this.length*this.height)+ this.width*this.height)
+  }
 }
 
+const cuboidTwo = new CuboidMaker ({
+  length: '4',
+  width: '5',
+  height: '5',
+})
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
-// console.log(cuboidTwo.volume()); // 100
-// console.log(cuboidTwo.surfaceArea()); // 130
+console.log("Topic 4: Volume:", cuboidTwo.volume()); // 100
+console.log("Topic 4: Surface Area:", cuboidTwo.surfaceArea()); // 130
 
 
 
@@ -216,9 +231,24 @@ class CuboidMakerTwo{
 
 // 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
   
+class CubeMaker extends CuboidMaker {
+  constructor(attributes){
+    super(attributes)
+  }
+  vol(){
+    return this.length * this.length * this.length;
+  }
+  area(){
+    return 6 * (this.length * this.length);
+  }
+}
 
+const cubeOne = new CubeMaker ({
+  length: '4',
+})
 
-
+console.log("Stretch: Volume:", cubeOne.vol()); // 100
+console.log("Stretch: Surface Area:", cubeOne.area()); // 130
 
 
   /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
