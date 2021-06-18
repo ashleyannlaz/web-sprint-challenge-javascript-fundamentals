@@ -45,12 +45,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-1. Fork the repo
-2. Clone your forked version of the repo
-3. cd into your repo and create a branch with your first and last name
+1. Fork the repo - done!
+2. Clone your forked version of the repo - done!
+3. cd into your repo and create a branch with your first and last name -  - done!done!
 NOTE: Tests will run for the JavaScript portion of this challenge only
-4. open the terminal in your vs code and type `npm install`
-5. next type `npm run test:watch` in your terminal
+4. open the terminal in your vs code and type `npm install` - done!
+5. next type `npm run test:watch` in your terminal - done!
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Task 2: Project Requirements
