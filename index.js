@@ -136,7 +136,14 @@ function greeting(first,last){
   
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
  
-
+let mult = (a,b) => (a * b);
+console.log("Stretch multi" , mult(2,3));
+let adding = (a,b) => (a + b);
+console.log("Stretch multi" , adding(2,3));
+let hiThere = (f, l) => {
+  return (`Hello ${f} ${l}, nice to meet you!`)
+}
+console.log("Stretch Greeting" , hiThere('Test','Grader'));
 
 
 
