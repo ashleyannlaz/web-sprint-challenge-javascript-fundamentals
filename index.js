@@ -17,7 +17,9 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
+// Closure happens when a function reaches out of its scope to grab a variable defined in an outer function. 
 
+//In this case, the the child 'nestedFunction' can reach into myFunction to grab the 'internal' variable because all child functions inherit variables from its parent function. Inheritance can only be passed down, not up. 
 
 
 
@@ -28,7 +30,7 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(number) {
   /*Your Code Here*/
 
   }
