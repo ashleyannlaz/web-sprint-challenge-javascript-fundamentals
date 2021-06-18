@@ -28,14 +28,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-
+    `.forEach` iterates through each item in an array without stopping and doesn't return a new array. `.map` iterates through the data but returns a new array with the transformed data without changing the original array. 
 2. Explain the difference between a callback and a higher order function.
-
+    A callback function is a function that is passed as an argument to another function, like the add and multiply functions in the sprint. A higher order function accepts other functions as arguments (like the consume function in the sprint.)
 3. Can you explain what a closure is and how you used it in the counter function? 
-
+        Closure is when a function reaches out from its scope to get a variable. In the case of the counter, the function reaches out to get the start variable.
 4. Describe the four principles of the 'this' keyword.
-
+    Window - when you don't give 'this' any context it will return to the window, in strict mode is undefined in strict mode. Implicit - when the function method is invoked it is 'implied' to look to the left of the dot for what 'this' refers to. Explicit - we explicitly tell a function what 'this' refers to using .call, .apply or .bind. New - When we use a constructor function, 'this' refers to the specific instance of the object that is created. 
 5. Why do we need super() in an extended class?
+    super() is what allows child functions to inherit attributes and methods from its parent class. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -60,17 +61,17 @@ Your finished project must include all of the following requirements
 #### Task A: Closure
 
 This challenge takes a look at closures as well as scope. 
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+* [x] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task B: Objects and Arrays
 
 Test your knowledge of advanced array methods and callbacks.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+* [x] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task C: Prototypes
 
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
-* [ ] Find this challenge in the index.js file. Read the instructions carefully!
+* [x] Find this challenge in the index.js file. Read the instructions carefully!
 
 #### Task D: Classes
 
